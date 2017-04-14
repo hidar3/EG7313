@@ -1,0 +1,66 @@
+<headerLogout-cmp></headerLogout-cmp>
+
+<div class="container">
+<img src="frontend/assets/img/lrgborder.jpg" width="1500px" class="img-responsive" alt="divide bar" >
+
+	<div class="content">
+		<div class="row">
+      <!--
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+      -->
+	<h2>Inventory Table</h2>
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addModal">
+ Add
+</button>
+
+  <table class="table table-bordered table-responsive table-hover">
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>category</th>
+        <th>description</th>
+        <th>price</th>
+        <th>quantity</th>
+        <th></th>
+        <th></th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Did</td>
+        <td>Dcategory</td>
+        <td>Ddescription</td>
+        <td>Dprice</td>
+        <td>Dquantity</td>
+        <td><button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editModal">
+              Edit
+            </button>
+        </td>
+        <td><button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#deleteModal">
+              Delete
+            </button>
+        </td>
+
+      </tr>
+    </tbody>
+  </table>
+			<!--
+		</div>  
+      	<div class="col-md-3"></div>
+         -->
+		<div> <!-- end of did class row -->
+	</div> <!-- close div="content" -->	
+	
+<br>
+		
+</div>  <!--close div="container" -->
+
+
+
+<!-- modals here -->
+<addModal-cmp></addModal-cmp>
+<editModal-cmp></editModal-cmp>
+<deleteModal-cmp></deleteModal-cmp>
