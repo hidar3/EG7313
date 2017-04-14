@@ -22,6 +22,7 @@ var bounces_1 = require("./bounces/bounces");
 var addModal_1 = require("./addModal/addModal");
 var editModal_1 = require("./editModal/editModal");
 var deleteModal_1 = require("./deleteModal/deleteModal");
+var addEmployeeModal_1 = require("./addEmployeeModal/addEmployeeModal");
 var appRoutes = [
     { path: '', component: home_1.HomeComponent },
     { path: 'login', component: login_1.LoginComponent },
@@ -34,7 +35,8 @@ var appRoutes = [
     { path: 'bounces', component: bounces_1.BouncesComponent },
     { path: 'addModal', component: addModal_1.addModalComponent },
     { path: 'editModal', component: editModal_1.editModalComponent },
-    { path: 'deleteModal', component: deleteModal_1.deleteModalComponent }
+    { path: 'deleteModal', component: deleteModal_1.deleteModalComponent },
+    { path: 'addEmployeeModal', component: addEmployeeModal_1.addEmployeeModalComponent }
 ];
 var AppModule = (function () {
     function AppModule() {
@@ -60,7 +62,8 @@ AppModule = __decorate([
             bounces_1.BouncesComponent,
             addModal_1.addModalComponent,
             editModal_1.editModalComponent,
-            deleteModal_1.deleteModalComponent
+            deleteModal_1.deleteModalComponent,
+            addEmployeeModal_1.addEmployeeModalComponent
         ],
         bootstrap: [app_component_1.AppComponent]
     })

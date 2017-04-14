@@ -14,12 +14,23 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li style="margin-top: 23px"><b >Welcome Admin! </b></li>
-            <li><a routerLink="/signUpForm">Add employee<span class="sr-only">(current)</span></a></li>
-            <li class="active"><a routerLink="/">Logout</a></li>
+            <li style="margin-top: 23px"><b >Welcome Admin!! </b></li>
+            <li>
+              <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addEmployeeModal">
+                Add Employee
+              </button>
+            </li>
+            <li class="active">
+              <button type="button" routerLink="/" class="btn btn-primary btn-sm active">
+                Logout
+              </button>
+              </li>
 
           </ul>
         
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
+
+<addEmployeeModal-cmp></addEmployeeModal-cmp>

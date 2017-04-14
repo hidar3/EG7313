@@ -15,7 +15,7 @@ import { BouncesComponent } from './bounces/bounces';
 import { addModalComponent } from './addModal/addModal';
 import { editModalComponent } from './editModal/editModal';
 import { deleteModalComponent } from './deleteModal/deleteModal';
-
+import { addEmployeeModalComponent } from './addEmployeeModal/addEmployeeModal';
 
 
 
@@ -31,7 +31,8 @@ const appRoutes: Routes = [
   { path: 'bounces', component: BouncesComponent },
   { path: 'addModal', component: addModalComponent },
   { path: 'editModal', component: editModalComponent },
-  { path: 'deleteModal', component: deleteModalComponent }
+  { path: 'deleteModal', component: deleteModalComponent },
+  { path: 'addEmployeeModal', component: addEmployeeModalComponent }
 
   
 
@@ -55,7 +56,8 @@ const appRoutes: Routes = [
     BouncesComponent,
     addModalComponent,
     editModalComponent,
-    deleteModalComponent
+    deleteModalComponent,
+    addEmployeeModalComponent
 
   ],
   bootstrap: [ AppComponent ]

@@ -1,7 +1,7 @@
 {
-  "name": "starter-kit",
-  "description": "A concise skeleton for building single-page web apps.",
-  "website": "https://github.com/maangulo12/starter-kit",
+  "name": "EG7313",
+  "description": "EG7313 Project",
+  "website": "https://github.com/hidar3/EG7313",
   "scripts": {
     "postdeploy": ""
   },

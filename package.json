@@ -1,7 +1,7 @@
 {
-  "name": "starter-kit",
+  "name": "EG7317",
   "version": "1.0.0",
-  "description": "A concise skeleton for building single-page web apps.",
+  "description": "EG7313 Project.",
   "main": "gulpfile.js",
   "dependencies": {
     "@angular/common": "~2.2.0",
