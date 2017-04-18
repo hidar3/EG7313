@@ -7,10 +7,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+var addEmployeeModal_form_1 = require("./addEmployeeModal.form");
 var addEmployeeModalComponent = (function () {
     function addEmployeeModalComponent() {
         this.name = 'addEmployeeModalComponent';
+        this.employee = new addEmployeeModal_form_1.addEmployeeModalForm('', '', '');
+        this.submitted = false;
     }
+    addEmployeeModalComponent.prototype.addEmployeeSubmit = function (value) {
+        console.log(value);
+        this.submitted = true;
+    };
     return addEmployeeModalComponent;
 }());
 addEmployeeModalComponent = __decorate([

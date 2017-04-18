@@ -9,6 +9,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var router_1 = require("@angular/router");
+var forms_1 = require("@angular/forms");
 var app_component_1 = require("./app.component");
 var home_1 = require("./home/home");
 var login_1 = require("./login/login");
@@ -47,7 +48,8 @@ AppModule = __decorate([
     core_1.NgModule({
         imports: [
             platform_browser_1.BrowserModule,
-            router_1.RouterModule.forRoot(appRoutes)
+            router_1.RouterModule.forRoot(appRoutes),
+            forms_1.FormsModule
         ],
         declarations: [
             app_component_1.AppComponent,
