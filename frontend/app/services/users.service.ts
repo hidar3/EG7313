@@ -14,4 +14,11 @@ export class UsersService {
         console.log(value);
     }
 
+    //login a user
+    loginUser(value: any){
+        this.http.post(this.url, value);
+        console.log(value);
+    }
+
+
 }

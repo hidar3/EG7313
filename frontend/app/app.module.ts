@@ -2,7 +2,7 @@ import { NgModule }             from '@angular/core';
 import { BrowserModule }        from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http'; // needed for services
+import { HttpModule } from '@angular/http'; 
 
 import { AppComponent }   from './app.component';
 import { HomeComponent }  from './home/home';

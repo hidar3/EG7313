@@ -21,6 +21,11 @@ var UsersService = (function () {
         this.http.post(this.url, value);
         console.log(value);
     };
+    //login a user
+    UsersService.prototype.loginUser = function (value) {
+        this.http.post(this.url, value);
+        console.log(value);
+    };
     return UsersService;
 }());
 UsersService = __decorate([
