@@ -2,6 +2,7 @@ import { NgModule }             from '@angular/core';
 import { BrowserModule }        from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http'; // needed for services
 
 import { AppComponent }   from './app.component';
 import { HomeComponent }  from './home/home';
@@ -17,6 +18,9 @@ import { addModalComponent } from './addModal/addModal';
 import { editModalComponent } from './editModal/editModal';
 import { deleteModalComponent } from './deleteModal/deleteModal';
 import { addEmployeeModalComponent } from './addEmployeeModal/addEmployeeModal';
+import { UsersService } from './services/users.service';
+
+
 
 
 const appRoutes: Routes = [
@@ -42,7 +46,8 @@ const appRoutes: Routes = [
   imports: [ 
     BrowserModule,
     RouterModule.forRoot(appRoutes),
-    FormsModule
+    FormsModule,
+    HttpModule
   ],
   declarations: [ 
     AppComponent,
@@ -60,6 +65,9 @@ const appRoutes: Routes = [
     deleteModalComponent,
     addEmployeeModalComponent
 
+  ],
+  providers: [
+    UsersService
   ],
   bootstrap: [ AppComponent ]
 })
