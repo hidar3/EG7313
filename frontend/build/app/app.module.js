@@ -26,6 +26,7 @@ var editModal_1 = require("./editModal/editModal");
 var deleteModal_1 = require("./deleteModal/deleteModal");
 var addEmployeeModal_1 = require("./addEmployeeModal/addEmployeeModal");
 var users_service_1 = require("./services/users.service");
+var employeeTable_1 = require("./employeeTable/employeeTable");
 var appRoutes = [
     { path: '', component: home_1.HomeComponent },
     { path: 'login', component: login_1.LoginComponent },
@@ -39,7 +40,8 @@ var appRoutes = [
     { path: 'addModal', component: addModal_1.addModalComponent },
     { path: 'editModal', component: editModal_1.editModalComponent },
     { path: 'deleteModal', component: deleteModal_1.deleteModalComponent },
-    { path: 'addEmployeeModal', component: addEmployeeModal_1.addEmployeeModalComponent }
+    { path: 'addEmployeeModal', component: addEmployeeModal_1.addEmployeeModalComponent },
+    { path: 'employeeTable', component: employeeTable_1.employeeTableComponent }
 ];
 var AppModule = (function () {
     function AppModule() {
@@ -68,7 +70,8 @@ AppModule = __decorate([
             addModal_1.addModalComponent,
             editModal_1.editModalComponent,
             deleteModal_1.deleteModalComponent,
-            addEmployeeModal_1.addEmployeeModalComponent
+            addEmployeeModal_1.addEmployeeModalComponent,
+            employeeTable_1.employeeTableComponent
         ],
         providers: [
             users_service_1.UsersService

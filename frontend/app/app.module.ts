@@ -19,7 +19,7 @@ import { editModalComponent } from './editModal/editModal';
 import { deleteModalComponent } from './deleteModal/deleteModal';
 import { addEmployeeModalComponent } from './addEmployeeModal/addEmployeeModal';
 import { UsersService } from './services/users.service';
-
+import { employeeTableComponent } from './employeeTable/employeeTable';
 
 
 
@@ -36,9 +36,8 @@ const appRoutes: Routes = [
   { path: 'addModal', component: addModalComponent },
   { path: 'editModal', component: editModalComponent },
   { path: 'deleteModal', component: deleteModalComponent },
-  { path: 'addEmployeeModal', component: addEmployeeModalComponent }
-
-  
+  { path: 'addEmployeeModal', component: addEmployeeModalComponent },
+  { path: 'employeeTable', component: employeeTableComponent }
 
 ];
 
@@ -63,8 +62,8 @@ const appRoutes: Routes = [
     addModalComponent,
     editModalComponent,
     deleteModalComponent,
-    addEmployeeModalComponent
-
+    addEmployeeModalComponent,
+    employeeTableComponent
   ],
   providers: [
     UsersService
