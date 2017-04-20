@@ -11,15 +11,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
+require("rxjs/add/operator/map");
 var InventoriesService = (function () {
     function InventoriesService(http) {
         this.http = http;
-        this.url = '/api/v1/users';
+        this.url = '/api/v1/inventories';
     }
     //add a user
     InventoriesService.prototype.addInventory = function (value) {
-        this.http.post(this.url, value);
-        console.log(value);
+        var valueString = JSON.stringify(value);
+        var headers = new http_1.Headers({ 'Content-Type': 'application/json' });
+        var options = new http_1.RequestOptions({ headers: headers });
+        return this.http.post(this.url, valueString, options).map(function (res) { return res.json(); });
     };
     return InventoriesService;
 }());

@@ -20,7 +20,9 @@ var addEmployeeModalComponent = (function () {
     }
     addEmployeeModalComponent.prototype.addEmployeeSubmit = function (value) {
         this.submitted = true;
-        this.usersService.addUser(value);
+        this.usersService.addUser(value).subscribe(function (data) {
+            console.log(data);
+        });
     };
     return addEmployeeModalComponent;
 }());

@@ -15,12 +15,14 @@ var inventories_service_1 = require("../services/inventories.service");
 var addModalComponent = (function () {
     function addModalComponent(inventoriesService) {
         this.inventoriesService = inventoriesService;
-        this.inventory = new addModal_form_1.addModalForm('', '', '', '', '');
+        this.inventory = new addModal_form_1.addModalForm('', '', '', '');
         this.submitted = false;
     }
     addModalComponent.prototype.addSubmit = function (value) {
         this.submitted = true;
-        this.inventoriesService.addInventory(value);
+        this.inventoriesService.addInventory(value).subscribe(function (data) {
+            console.log(data);
+        });
     };
     return addModalComponent;
 }());

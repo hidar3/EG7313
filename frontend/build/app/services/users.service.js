@@ -11,6 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
+require("rxjs/add/operator/map");
 var UsersService = (function () {
     function UsersService(http) {
         this.http = http;
@@ -18,13 +19,15 @@ var UsersService = (function () {
     }
     //add a user
     UsersService.prototype.addUser = function (value) {
-        this.http.post(this.url, value);
-        console.log(value);
+        var valueString = JSON.stringify(value);
+        var headers = new http_1.Headers({ 'Content-Type': 'application/json' });
+        var options = new http_1.RequestOptions({ headers: headers });
+        return this.http.post(this.url, valueString, options).map(function (res) { return res.json(); });
     };
     //login a user
     UsersService.prototype.loginUser = function (value) {
-        this.http.post(this.url, value);
-        console.log(value);
+        // this.http.post(this.url, value);
+        // console.log(value);
     };
     return UsersService;
 }());

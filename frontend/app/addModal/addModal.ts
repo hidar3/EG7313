@@ -9,7 +9,7 @@ import { InventoriesService } from '../services/inventories.service';
   templateUrl: 'addModal.html'
 })
 export class addModalComponent { 
-  inventory = new addModalForm('','','','','');
+  inventory = new addModalForm('','','','');
   submitted = false;
 
 constructor(private inventoriesService: InventoriesService) {}
@@ -17,8 +17,9 @@ constructor(private inventoriesService: InventoriesService) {}
   addSubmit(value: any){
     this.submitted = true;
 
-    this.inventoriesService.addInventory(value);
-
+    this.inventoriesService.addInventory(value).subscribe(data => {
+      console.log(data);
+    });
   }
 
 }

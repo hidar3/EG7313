@@ -17,8 +17,9 @@ constructor(private usersService: UsersService) {}
   addEmployeeSubmit(value: any){
     this.submitted = true;
 
-    this.usersService.addUser(value);
-
+    this.usersService.addUser(value).subscribe(data => {
+      console.log(data);
+    });
   }
 
 }
