@@ -16,6 +16,8 @@
 
 from backend import db, bcrypt
 
+from decimal import Decimal
+
 
 class User(db.Model):
     """This is the first model in the database."""
@@ -51,7 +53,7 @@ class Inventory(db.Model):
     id       = db.Column(db.Integer, primary_key=True)
     category    = db.Column(db.String(50), nullable=False)
     description    = db.Column(db.String(50), nullable=False)
-    price = db.Column(db.Numeric(12,2), nullable=False) 
+    price = db.Column(db.DECIMAL(asdecimal=False),default=0.00, nullable=False) 
     quantity = db.Column(db.Integer, nullable=False)
 
 
