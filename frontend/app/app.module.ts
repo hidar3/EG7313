@@ -1,13 +1,12 @@
 import { NgModule }             from '@angular/core';
 import { BrowserModule }        from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http'; 
+import { FormsModule }          from '@angular/forms';
+import { HttpModule }           from '@angular/http'; 
 
 import { AppComponent }   from './app.component';
 import { HomeComponent }  from './home/home';
 import { LoginComponent } from './login/login';
-import { signUpFormComponent } from './signUpForm/signUpForm';
 import { headerComponent } from './header/header';
 import { HeaderLogoutComponent } from './headerLogout/headerLogout';
 import { InventoryComponent } from './inventory/inventory';
@@ -18,27 +17,14 @@ import { addModalComponent } from './addModal/addModal';
 import { editModalComponent } from './editModal/editModal';
 import { deleteModalComponent } from './deleteModal/deleteModal';
 import { addEmployeeModalComponent } from './addEmployeeModal/addEmployeeModal';
-import { UsersService } from './services/users.service';
 import { employeeTableComponent } from './employeeTable/employeeTable';
-
-
+import { UsersService } from './services/users.service';
+import { InventoriesService } from './services/inventories.service';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'login', component: LoginComponent },
-  { path: 'signUpForm', component: signUpFormComponent },
-  { path: 'inventory', component: InventoryComponent },
-  { path: 'header', component: headerComponent },
-  { path: 'headerLogout', component: HeaderLogoutComponent },
-  { path: 'banner', component: BannerComponent },
-  { path: 'sideNav', component: SideNavComponent },
   { path: 'bounces', component: BouncesComponent },
-  { path: 'addModal', component: addModalComponent },
-  { path: 'editModal', component: editModalComponent },
-  { path: 'deleteModal', component: deleteModalComponent },
-  { path: 'addEmployeeModal', component: addEmployeeModalComponent },
-  { path: 'employeeTable', component: employeeTableComponent }
-
+  { path: 'inventory', component: InventoryComponent }
 ];
 
 @NgModule({
@@ -49,24 +35,24 @@ const appRoutes: Routes = [
     HttpModule
   ],
   declarations: [ 
-    AppComponent,
-    HomeComponent,
-    LoginComponent,
-    signUpFormComponent,
-    InventoryComponent,
-    headerComponent,
-    HeaderLogoutComponent,
-    BannerComponent,
+    AppComponent,       
+    LoginComponent, 
+    headerComponent,    
+    BannerComponent,    
     SideNavComponent,
+    HomeComponent,
     BouncesComponent,
+    addEmployeeModalComponent,
+    HeaderLogoutComponent,
     addModalComponent,
     editModalComponent,
     deleteModalComponent,
-    addEmployeeModalComponent,
-    employeeTableComponent
+    employeeTableComponent,
+    InventoryComponent
   ],
   providers: [
-    UsersService
+    UsersService,
+    InventoriesService
   ],
   bootstrap: [ AppComponent ]
 })
