@@ -12,6 +12,13 @@
 
     For more information on how to hash passwords:
         - Flask-Bcrypt : https://flask-bcrypt.readthedocs.io/en/latest/
+
+    to create all tables in the database:
+    python3 manage.py create
+    to recreate:
+    python3 manage.py recreate
+    !!!note that recreate will drop all tables and recreate!!!
+
 """
 
 from backend import db, bcrypt
