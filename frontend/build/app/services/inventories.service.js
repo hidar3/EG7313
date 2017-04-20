@@ -10,26 +10,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var addModal_form_1 = require("./addModal.form");
-var inventories_service_1 = require("../services/inventories.service");
-var addModalComponent = (function () {
-    function addModalComponent(inventoriesService) {
-        this.inventoriesService = inventoriesService;
-        this.inventory = new addModal_form_1.addModalForm('', '', '', '', '');
-        this.submitted = false;
+var http_1 = require("@angular/http");
+var InventoriesService = (function () {
+    function InventoriesService(http) {
+        this.http = http;
+        this.url = '/api/v1/users';
     }
-    addModalComponent.prototype.addSubmit = function (value) {
-        this.submitted = true;
-        this.inventoriesService.addInventory(value);
+    //add a user
+    InventoriesService.prototype.addInventory = function (value) {
+        this.http.post(this.url, value);
+        console.log(value);
     };
-    return addModalComponent;
+    return InventoriesService;
 }());
-addModalComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'addModal-cmp',
-        templateUrl: 'addModal.html'
-    }),
-    __metadata("design:paramtypes", [inventories_service_1.InventoriesService])
-], addModalComponent);
-exports.addModalComponent = addModalComponent;
+InventoriesService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [http_1.Http])
+], InventoriesService);
+exports.InventoriesService = InventoriesService;
