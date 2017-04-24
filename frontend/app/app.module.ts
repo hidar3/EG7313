@@ -17,7 +17,7 @@ import { addModalComponent } from './addModal/addModal';
 import { editModalComponent } from './editModal/editModal';
 import { deleteModalComponent } from './deleteModal/deleteModal';
 import { addEmployeeModalComponent } from './addEmployeeModal/addEmployeeModal';
-import { employeeTableComponent } from './employeeTable/employeeTable';
+import { employeeTableComponent } from './employeeTable/employeeTable'; 
 import { UsersService } from './services/users.service';
 import { InventoriesService } from './services/inventories.service';
 
@@ -45,7 +45,7 @@ const appRoutes: Routes = [
     addEmployeeModalComponent,
     HeaderLogoutComponent,
     addModalComponent,
-    editModalComponent,
+    editModalComponent, 
     deleteModalComponent,
     employeeTableComponent,
     InventoryComponent

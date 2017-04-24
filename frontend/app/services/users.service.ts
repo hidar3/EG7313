@@ -5,7 +5,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class UsersService {
        
-    url: string = '/api/v1/users';
+    private url: string = '/api/v1/users';
 
     constructor(private http: Http) {}
 
@@ -16,6 +16,12 @@ export class UsersService {
         let options = new RequestOptions({ headers: headers });
 console.log("The value has been returned.");
         return this.http.post(this.url, valueString, options).map(res => res.json());
+    }
+
+    getUsers(){
+        return this.http.get(this.url)
+            .map((response:Response) => response.json()); //converts observable into JSON file format
+
     }
 
 

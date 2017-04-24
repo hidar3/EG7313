@@ -25,6 +25,10 @@ var UsersService = (function () {
         console.log("The value has been returned.");
         return this.http.post(this.url, valueString, options).map(function (res) { return res.json(); });
     };
+    UsersService.prototype.getUsers = function () {
+        return this.http.get(this.url)
+            .map(function (response) { return response.json(); }); //converts observable into JSON file format
+    };
     //login a user
     UsersService.prototype.loginUser = function (value) {
         // this.http.post(this.url, value);

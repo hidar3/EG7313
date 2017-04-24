@@ -10,20 +10,18 @@
           <th>password</th>
         </tr>
       </thead>
-     <!-- 
-      {% for fire in fires %}
-         {{ fire['fire_name'] }}
-      {% endfor %}
-      -->
+
       <tbody>
-       
-          <tr>
-            <td>Did</td>
-            <td>Demail</td>
-            <td>Dusername</td>
-            <td>Dpassword</td>
+   
+          <tr *ngFor="let user of users">
+            <td>{{user.id}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.password}}</td>
           </tr>
         
         </tbody>
 
 </table>
+
+ <!-- reference https://www.youtube.com/watch?v=oLtwPzr_8uA -->   
