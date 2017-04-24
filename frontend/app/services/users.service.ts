@@ -14,7 +14,7 @@ export class UsersService {
         let valueString = JSON.stringify(value);
         let headers = new Headers({ 'Content-Type': 'application/json' });
         let options = new RequestOptions({ headers: headers });
-
+console.log("The value has been returned.");
         return this.http.post(this.url, valueString, options).map(res => res.json());
     }
 

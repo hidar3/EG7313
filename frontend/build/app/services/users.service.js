@@ -22,6 +22,7 @@ var UsersService = (function () {
         var valueString = JSON.stringify(value);
         var headers = new http_1.Headers({ 'Content-Type': 'application/json' });
         var options = new http_1.RequestOptions({ headers: headers });
+        console.log("The value has been returned.");
         return this.http.post(this.url, valueString, options).map(function (res) { return res.json(); });
     };
     //login a user
