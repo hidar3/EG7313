@@ -15,7 +15,7 @@ require("rxjs/add/operator/map");
 var UsersService = (function () {
     function UsersService(http) {
         this.http = http;
-        this.url = '/api/v1/users';
+        this.url = "/api/v1/users";
     }
     //add a user
     UsersService.prototype.addUser = function (value) {
@@ -26,8 +26,7 @@ var UsersService = (function () {
         return this.http.post(this.url, valueString, options).map(function (res) { return res.json(); });
     };
     UsersService.prototype.getUsers = function () {
-        return this.http.get(this.url)
-            .map(function (response) { return response.json(); }); //converts observable into JSON file format
+        return this.http.get(this.url).map(function (res) { return res.json(); }); //converts observable into JSON file format
     };
     //login a user
     UsersService.prototype.loginUser = function (value) {

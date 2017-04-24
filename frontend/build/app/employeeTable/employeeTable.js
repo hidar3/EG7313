@@ -14,12 +14,13 @@ var users_service_1 = require("../services/users.service");
 var employeeTableComponent = (function () {
     function employeeTableComponent(userServices) {
         this.userServices = userServices;
-        this.users = [];
+        //employees: any[];
+        this.employees = ['', '', '', ''];
     }
     employeeTableComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.userServices.getUsers()
-            .subscribe(function (resUserData) { return _this.users = resUserData; });
+            .subscribe(function (resUserData) { return _this.employees = resUserData; });
     };
     return employeeTableComponent;
 }());

@@ -9,11 +9,12 @@ import { UsersService } from '../services/users.service';
 })
 
 export class employeeTableComponent implements OnInit { 
-    users = [];
+    //employees: any[];
+    employees = ['','', '',''];
 
     constructor(private userServices: UsersService){}
     ngOnInit(){
       this.userServices.getUsers()
-      .subscribe(resUserData => this.users = resUserData);
+      .subscribe(resUserData => this.employees = resUserData);
     }
 }
