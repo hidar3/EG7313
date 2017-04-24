@@ -16,7 +16,7 @@
           <ul class="nav navbar-nav">
             <li style="margin-top: 23px"><b >Welcome Admin!! </b></li>
             <li style="margin: 17px 17px 17px 50px">
-              <button type="button" class="btn btn-primary btn-sm" id="btnShowaddEmployeeModal">
+              <button id="btnShowaddEmployeeModal" type="button" class="btn btn-primary btn-sm" > <!-- id="btnShowaddEmployeeModal" data-toggle="modal" data-target="#addEmployeeModal" -->
                 Add Employee
               </button>
             </li>
@@ -38,3 +38,18 @@
 <addEmployeeModal-cmp></addEmployeeModal-cmp>
 
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript">
+      $(document).ready(function() {
+          $('#btnShowaddEmployeeModal').click(function() {
+              $('#addEmployeeModal').modal('show');
+          });
+          $('#btnHideaddEmployeeModal').click(function() {
+              console.log("btn hide add employee modal clicked");
+							$('#addEmployeeModal').modal('hide');
+          });
+
+      });
+    </script>
