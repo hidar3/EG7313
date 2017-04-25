@@ -10,11 +10,14 @@ import { UsersService } from '../services/users.service';
 
 export class employeeTableComponent implements OnInit { 
     //employees: any[];
-    employees = ['','', '',''];
+    employees: any = [];
 
-    constructor(private userServices: UsersService){}
-    ngOnInit(){
-      this.userServices.getUsers()
-      .subscribe(resUserData => this.employees = resUserData);
+    constructor(private usersService: UsersService){}
+    ngOnInit() {
+    this.usersService.getUsers().subscribe(data => {
+    this.employees= data.objects;
+    console.log(data);
+    console.log(data.objects);
+    });
     }
 }

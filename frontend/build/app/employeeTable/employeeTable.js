@@ -12,15 +12,18 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var users_service_1 = require("../services/users.service");
 var employeeTableComponent = (function () {
-    function employeeTableComponent(userServices) {
-        this.userServices = userServices;
+    function employeeTableComponent(usersService) {
+        this.usersService = usersService;
         //employees: any[];
-        this.employees = ['', '', '', ''];
+        this.employees = [];
     }
     employeeTableComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.userServices.getUsers()
-            .subscribe(function (resUserData) { return _this.employees = resUserData; });
+        this.usersService.getUsers().subscribe(function (data) {
+            _this.employees = data.objects;
+            console.log(data);
+            console.log(data.objects);
+        });
     };
     return employeeTableComponent;
 }());
