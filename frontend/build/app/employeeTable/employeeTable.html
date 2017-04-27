@@ -8,22 +8,28 @@
           <th>email</th>
           <th>username</th>
           <th>password</th>
+          <th>Edit</th>
+          <th>Delete</th>
         </tr>
       </thead>
 
       <tbody>
-          <tr>
-            <td>testid</td>
-            <td>testemail</td>
-            <td>testusername</td>
-            <td>testpassword</td>
-          </tr>
           
           <tr *ngFor="let employee of employees">
             <td>{{employee.id}}</td>
             <td>{{employee.email}}</td>
             <td>{{employee.username}}</td>
             <td>{{employee.password}}</td>
+
+            <td><button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editModal">
+                  Edit
+                </button>
+            </td>
+            <td><button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#deleteModal">
+                  Delete
+                </button>
+            </td>
+
           </tr>
         
         </tbody>

@@ -24,6 +24,9 @@ var InventoriesService = (function () {
         var options = new http_1.RequestOptions({ headers: headers });
         return this.http.post(this.url, valueString, options).map(function (res) { return res.json(); });
     };
+    InventoriesService.prototype.getInventories = function () {
+        return this.http.get(this.url).map(function (res) { return res.json(); }); //converts observable into JSON file format
+    };
     return InventoriesService;
 }());
 InventoriesService = __decorate([

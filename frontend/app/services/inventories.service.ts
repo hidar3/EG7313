@@ -18,6 +18,10 @@ export class InventoriesService {
         return this.http.post(this.url, valueString, options).map(res => res.json());
     }
 
+    getInventories(){
+        return this.http.get(this.url).map(res => res.json()); //converts observable into JSON file format
+
+    }
 
 
 }

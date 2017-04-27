@@ -10,11 +10,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+var router_1 = require("@angular/router");
 var addEmployeeModal_form_1 = require("./addEmployeeModal.form");
 var users_service_1 = require("../services/users.service");
 var addEmployeeModalComponent = (function () {
-    function addEmployeeModalComponent(usersService) {
+    function addEmployeeModalComponent(usersService, router) {
         this.usersService = usersService;
+        this.router = router;
         this.employee = new addEmployeeModal_form_1.addEmployeeModalForm('', '', '');
         this.submitted = false;
     }
@@ -22,6 +24,9 @@ var addEmployeeModalComponent = (function () {
         this.submitted = true;
         this.usersService.addUser(value).subscribe(function (data) {
             console.log(data);
+            $('#addEmployeeModal').modal('hide');
+            window.location.reload();
+            //this.router.navigateByUrl('');
         });
     };
     return addEmployeeModalComponent;
@@ -32,6 +37,6 @@ addEmployeeModalComponent = __decorate([
         selector: 'addEmployeeModal-cmp',
         templateUrl: 'addEmployeeModal.html'
     }),
-    __metadata("design:paramtypes", [users_service_1.UsersService])
+    __metadata("design:paramtypes", [users_service_1.UsersService, router_1.Router])
 ], addEmployeeModalComponent);
 exports.addEmployeeModalComponent = addEmployeeModalComponent;

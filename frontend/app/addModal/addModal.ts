@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 import { addModalForm } from './addModal.form';
 import { InventoriesService } from '../services/inventories.service';
@@ -12,14 +14,17 @@ export class addModalComponent {
   inventory = new addModalForm('','','','');
   submitted = false;
 
-constructor(private inventoriesService: InventoriesService) {}
+constructor(private inventoriesService: InventoriesService, private router: Router) {}
 
   addSubmit(value: any){
     this.submitted = true;
-
     this.inventoriesService.addInventory(value).subscribe(data => {
-      console.log(data);
-    });
+    console.log(data);
+    $('#addEmployeeModal').modal('hide');
+    window.location.reload();
+
+  });
+  
   }
 
 }
