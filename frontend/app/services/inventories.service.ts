@@ -23,5 +23,13 @@ export class InventoriesService {
 
     }
 
+    updateInventory(value: any){
+        let valueString = JSON.stringify(value);
+        let headers = new Headers({ 'Content-Type': 'application/json' });
+        let options = new RequestOptions({ headers: headers });
+
+        return this.http.put(this.url + "/" + value.id, valueString, options).map(res => res.json());
+    }
+
 
 }

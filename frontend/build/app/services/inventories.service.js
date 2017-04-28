@@ -27,6 +27,12 @@ var InventoriesService = (function () {
     InventoriesService.prototype.getInventories = function () {
         return this.http.get(this.url).map(function (res) { return res.json(); }); //converts observable into JSON file format
     };
+    InventoriesService.prototype.updateInventory = function (value) {
+        var valueString = JSON.stringify(value);
+        var headers = new http_1.Headers({ 'Content-Type': 'application/json' });
+        var options = new http_1.RequestOptions({ headers: headers });
+        return this.http.put(this.url + "/" + value.id, valueString, options).map(function (res) { return res.json(); });
+    };
     return InventoriesService;
 }());
 InventoriesService = __decorate([

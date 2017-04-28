@@ -1,4 +1,3 @@
-//**********************************/
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -16,6 +15,7 @@ var InventoryComponent = (function () {
     function InventoryComponent(inventoriesService) {
         this.inventoriesService = inventoriesService;
         this.inventories = [];
+        this.inventory = ''; //used for edit modal
     }
     InventoryComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -24,6 +24,10 @@ var InventoryComponent = (function () {
             console.log(data);
             console.log(data.objects);
         });
+    };
+    //showeditModal function to show editModal form in editModal.html
+    InventoryComponent.prototype.showeditModal = function () {
+        $('#editModal').modal("show");
     };
     return InventoryComponent;
 }());

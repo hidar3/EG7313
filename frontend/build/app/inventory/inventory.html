@@ -37,19 +37,22 @@
          
             <td><button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editModal">
                   Edit
-                </button>
+                  
+                </button> 
             </td>
+
             <td><button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#deleteModal">
                   Delete
                 </button>
-            </td>
+            </td>   
+
+            <editModal-cmp [inventory]="inventory"></editModal-cmp>
+            
+            <deleteModal-cmp></deleteModal-cmp>
 
           </tr>
         
         </tbody>
-
-
-
 
   </table>
 
@@ -65,5 +68,5 @@
 
 <!-- modals here -->
 <addModal-cmp></addModal-cmp>
-<editModal-cmp></editModal-cmp>
-<deleteModal-cmp></deleteModal-cmp>
+
+
