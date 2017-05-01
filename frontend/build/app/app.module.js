@@ -44,6 +44,9 @@ AppModule = __decorate([
             router_1.RouterModule.forRoot(appRoutes),
             forms_1.FormsModule,
             http_1.HttpModule
+            // AgmCoreModule.forRoot({
+            //   apiKey: 'AIzaSyDCr2_3X_DxJADKn21Qq4VvPAN970ADHrI'
+            // })
         ],
         declarations: [
             app_component_1.AppComponent,

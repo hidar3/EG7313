@@ -21,6 +21,9 @@ import { employeeTableComponent } from './employeeTable/employeeTable';
 import { UsersService } from './services/users.service';
 import { InventoriesService } from './services/inventories.service';
 
+import { AgmCoreModule } from 'angular2-google-maps/core';
+
+
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'bounces', component: BouncesComponent },
@@ -33,6 +36,9 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     FormsModule,
     HttpModule
+    // AgmCoreModule.forRoot({
+    //   apiKey: 'AIzaSyDCr2_3X_DxJADKn21Qq4VvPAN970ADHrI'
+    // })
   ],
   declarations: [ 
     AppComponent,       
