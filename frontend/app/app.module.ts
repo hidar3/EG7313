@@ -13,6 +13,7 @@ import { InventoryComponent } from './inventory/inventory';
 import { BannerComponent } from './banner/banner';
 import { SideNavComponent } from './sideNav/sideNav';
 import { BouncesComponent } from './bounces/bounces';
+import { PopcornComponent } from './popcorn/popcorn';
 import { addModalComponent } from './addModal/addModal';
 import { editModalComponent } from './editModal/editModal';
 import { deleteModalComponent } from './deleteModal/deleteModal';
@@ -27,6 +28,7 @@ import { AgmCoreModule } from 'angular2-google-maps/core';
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'bounces', component: BouncesComponent },
+  { path: 'popcorn', component: PopcornComponent },
   { path: 'inventory', component: InventoryComponent }
 ];
 
@@ -48,6 +50,7 @@ const appRoutes: Routes = [
     SideNavComponent,
     HomeComponent,
     BouncesComponent,
+    PopcornComponent,
     addEmployeeModalComponent,
     HeaderLogoutComponent,
     addModalComponent,

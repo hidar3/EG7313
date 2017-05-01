@@ -20,6 +20,7 @@ var inventory_1 = require("./inventory/inventory");
 var banner_1 = require("./banner/banner");
 var sideNav_1 = require("./sideNav/sideNav");
 var bounces_1 = require("./bounces/bounces");
+var popcorn_1 = require("./popcorn/popcorn");
 var addModal_1 = require("./addModal/addModal");
 var editModal_1 = require("./editModal/editModal");
 var deleteModal_1 = require("./deleteModal/deleteModal");
@@ -30,6 +31,7 @@ var inventories_service_1 = require("./services/inventories.service");
 var appRoutes = [
     { path: '', component: home_1.HomeComponent },
     { path: 'bounces', component: bounces_1.BouncesComponent },
+    { path: 'popcorn', component: popcorn_1.PopcornComponent },
     { path: 'inventory', component: inventory_1.InventoryComponent }
 ];
 var AppModule = (function () {
@@ -56,6 +58,7 @@ AppModule = __decorate([
             sideNav_1.SideNavComponent,
             home_1.HomeComponent,
             bounces_1.BouncesComponent,
+            popcorn_1.PopcornComponent,
             addEmployeeModal_1.addEmployeeModalComponent,
             headerLogout_1.HeaderLogoutComponent,
             addModal_1.addModalComponent,
