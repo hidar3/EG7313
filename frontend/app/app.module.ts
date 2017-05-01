@@ -16,6 +16,7 @@ import { BouncesComponent } from './bounces/bounces';
 import { PopcornComponent } from './popcorn/popcorn';
 import { SnowConesComponent } from './snowCones/snowCones';
 import { CottonCandyComponent } from './cottonCandy/cottonCandy';
+import { TableschairsComponent } from './tableschairs/tableschairs';
 import { addModalComponent } from './addModal/addModal';
 import { editModalComponent } from './editModal/editModal';
 import { deleteModalComponent } from './deleteModal/deleteModal';
@@ -33,6 +34,7 @@ const appRoutes: Routes = [
   { path: 'popcorn', component: PopcornComponent },
   { path: 'snowCones', component: SnowConesComponent },
   { path: 'cottonCandy', component: CottonCandyComponent },
+  { path: 'tableschairs', component: TableschairsComponent },
   { path: 'inventory', component: InventoryComponent }
 ];
 
@@ -57,6 +59,7 @@ const appRoutes: Routes = [
     PopcornComponent,
     SnowConesComponent,
     CottonCandyComponent,
+    TableschairsComponent,
     addEmployeeModalComponent,
     HeaderLogoutComponent,
     addModalComponent,
