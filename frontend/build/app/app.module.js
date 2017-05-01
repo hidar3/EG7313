@@ -31,6 +31,7 @@ var addEmployeeModal_1 = require("./addEmployeeModal/addEmployeeModal");
 var employeeTable_1 = require("./employeeTable/employeeTable");
 var users_service_1 = require("./services/users.service");
 var inventories_service_1 = require("./services/inventories.service");
+var footer_1 = require("./footer/footer");
 var appRoutes = [
     { path: '', component: home_1.HomeComponent },
     { path: 'bounces', component: bounces_1.BouncesComponent },
@@ -38,7 +39,8 @@ var appRoutes = [
     { path: 'snowCones', component: snowCones_1.SnowConesComponent },
     { path: 'cottonCandy', component: cottonCandy_1.CottonCandyComponent },
     { path: 'tableschairs', component: tableschairs_1.TableschairsComponent },
-    { path: 'inventory', component: inventory_1.InventoryComponent }
+    { path: 'inventory', component: inventory_1.InventoryComponent },
+    { path: 'footer', component: footer_1.FooterComponent }
 ];
 var AppModule = (function () {
     function AppModule() {
@@ -74,7 +76,8 @@ AppModule = __decorate([
             editModal_1.editModalComponent,
             deleteModal_1.deleteModalComponent,
             employeeTable_1.employeeTableComponent,
-            inventory_1.InventoryComponent
+            inventory_1.InventoryComponent,
+            footer_1.FooterComponent
         ],
         providers: [
             users_service_1.UsersService,

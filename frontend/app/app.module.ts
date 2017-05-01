@@ -24,6 +24,7 @@ import { addEmployeeModalComponent } from './addEmployeeModal/addEmployeeModal';
 import { employeeTableComponent } from './employeeTable/employeeTable'; 
 import { UsersService } from './services/users.service';
 import { InventoriesService } from './services/inventories.service';
+import { FooterComponent } from './footer/footer';
 
 import { AgmCoreModule } from 'angular2-google-maps/core';
 
@@ -35,7 +36,8 @@ const appRoutes: Routes = [
   { path: 'snowCones', component: SnowConesComponent },
   { path: 'cottonCandy', component: CottonCandyComponent },
   { path: 'tableschairs', component: TableschairsComponent },
-  { path: 'inventory', component: InventoryComponent }
+  { path: 'inventory', component: InventoryComponent },
+  { path: 'footer', component: FooterComponent }
 ];
 
 @NgModule({
@@ -66,7 +68,8 @@ const appRoutes: Routes = [
     editModalComponent, 
     deleteModalComponent,
     employeeTableComponent,
-    InventoryComponent
+    InventoryComponent,
+    FooterComponent
   ],
   providers: [
     UsersService,
