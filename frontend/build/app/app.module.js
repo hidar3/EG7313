@@ -21,6 +21,7 @@ var banner_1 = require("./banner/banner");
 var sideNav_1 = require("./sideNav/sideNav");
 var bounces_1 = require("./bounces/bounces");
 var popcorn_1 = require("./popcorn/popcorn");
+var snowCones_1 = require("./snowCones/snowCones");
 var addModal_1 = require("./addModal/addModal");
 var editModal_1 = require("./editModal/editModal");
 var deleteModal_1 = require("./deleteModal/deleteModal");
@@ -32,6 +33,7 @@ var appRoutes = [
     { path: '', component: home_1.HomeComponent },
     { path: 'bounces', component: bounces_1.BouncesComponent },
     { path: 'popcorn', component: popcorn_1.PopcornComponent },
+    { path: 'snowCones', component: snowCones_1.SnowConesComponent },
     { path: 'inventory', component: inventory_1.InventoryComponent }
 ];
 var AppModule = (function () {
@@ -59,6 +61,7 @@ AppModule = __decorate([
             home_1.HomeComponent,
             bounces_1.BouncesComponent,
             popcorn_1.PopcornComponent,
+            snowCones_1.SnowConesComponent,
             addEmployeeModal_1.addEmployeeModalComponent,
             headerLogout_1.HeaderLogoutComponent,
             addModal_1.addModalComponent,
