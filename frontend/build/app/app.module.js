@@ -22,6 +22,7 @@ var sideNav_1 = require("./sideNav/sideNav");
 var bounces_1 = require("./bounces/bounces");
 var popcorn_1 = require("./popcorn/popcorn");
 var snowCones_1 = require("./snowCones/snowCones");
+var cottonCandy_1 = require("./cottonCandy/cottonCandy");
 var addModal_1 = require("./addModal/addModal");
 var editModal_1 = require("./editModal/editModal");
 var deleteModal_1 = require("./deleteModal/deleteModal");
@@ -34,6 +35,7 @@ var appRoutes = [
     { path: 'bounces', component: bounces_1.BouncesComponent },
     { path: 'popcorn', component: popcorn_1.PopcornComponent },
     { path: 'snowCones', component: snowCones_1.SnowConesComponent },
+    { path: 'cottonCandy', component: cottonCandy_1.CottonCandyComponent },
     { path: 'inventory', component: inventory_1.InventoryComponent }
 ];
 var AppModule = (function () {
@@ -62,6 +64,7 @@ AppModule = __decorate([
             bounces_1.BouncesComponent,
             popcorn_1.PopcornComponent,
             snowCones_1.SnowConesComponent,
+            cottonCandy_1.CottonCandyComponent,
             addEmployeeModal_1.addEmployeeModalComponent,
             headerLogout_1.HeaderLogoutComponent,
             addModal_1.addModalComponent,
