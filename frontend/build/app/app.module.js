@@ -16,6 +16,7 @@ var home_1 = require("./home/home");
 var login_1 = require("./login/login");
 var header_1 = require("./header/header");
 var headerLogout_1 = require("./headerLogout/headerLogout");
+var headerLogout2_1 = require("./headerLogout2/headerLogout2");
 var inventory_1 = require("./inventory/inventory");
 var banner_1 = require("./banner/banner");
 var sideNav_1 = require("./sideNav/sideNav");
@@ -40,6 +41,7 @@ var appRoutes = [
     { path: 'cottonCandy', component: cottonCandy_1.CottonCandyComponent },
     { path: 'tableschairs', component: tableschairs_1.TableschairsComponent },
     { path: 'inventory', component: inventory_1.InventoryComponent },
+    { path: 'employeeTable', component: employeeTable_1.employeeTableComponent },
     { path: 'footer', component: footer_1.FooterComponent }
 ];
 var AppModule = (function () {
@@ -72,6 +74,7 @@ AppModule = __decorate([
             tableschairs_1.TableschairsComponent,
             addEmployeeModal_1.addEmployeeModalComponent,
             headerLogout_1.HeaderLogoutComponent,
+            headerLogout2_1.HeaderLogout2Component,
             addModal_1.addModalComponent,
             editModal_1.editModalComponent,
             deleteModal_1.deleteModalComponent,

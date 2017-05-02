@@ -22,7 +22,30 @@ export class InventoryComponent implements OnInit {
     }
 
     //showeditModal function to show editModal form in editModal.html
-    showeditModal() {
+    showeditModal(inventory: any) {
+      this.inventory = inventory;
       $('#editModal').modal("show");
     }    
+
+    saveChanges(value: any){
+    this.inventoriesService.updateInventory(value).subscribe(data => {
+    console.log(data);
+    $('#editModal').modal('hide');
+    window.location.reload();
+  });
+}
+
+    showDeleteModal(inventory: any) {
+      this.inventory = inventory;
+      $('#deleteModal').modal("show");
+    }    
+
+    DeleteInventory(value: any){
+    this.inventoriesService.deleteInventory(value).subscribe(data => {
+    console.log(data);
+    $('#deleteModal').modal('hide');
+    window.location.reload();
+  });
+}
+
 }

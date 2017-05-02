@@ -20,8 +20,6 @@ export class editModalComponent {
     console.log(data);
     $('#editModal').modal('hide');
     window.location.reload();
-
   });
-  
   }
 }

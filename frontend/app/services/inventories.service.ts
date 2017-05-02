@@ -31,5 +31,12 @@ export class InventoriesService {
         return this.http.put(this.url + "/" + value.id, valueString, options).map(res => res.json());
     }
 
+    deleteInventory(value: any){
+        let header = new Headers({ 'Content-Type': 'application/json' });
+        let options = new RequestOptions({ headers: header });
+
+        return this.http.delete(this.url + "/" + value.id, options).map(res => res.json());
+    }
+
 
 }

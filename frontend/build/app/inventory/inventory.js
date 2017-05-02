@@ -26,8 +26,27 @@ var InventoryComponent = (function () {
         });
     };
     //showeditModal function to show editModal form in editModal.html
-    InventoryComponent.prototype.showeditModal = function () {
+    InventoryComponent.prototype.showeditModal = function (inventory) {
+        this.inventory = inventory;
         $('#editModal').modal("show");
+    };
+    InventoryComponent.prototype.saveChanges = function (value) {
+        this.inventoriesService.updateInventory(value).subscribe(function (data) {
+            console.log(data);
+            $('#editModal').modal('hide');
+            window.location.reload();
+        });
+    };
+    InventoryComponent.prototype.showDeleteModal = function (inventory) {
+        this.inventory = inventory;
+        $('#deleteModal').modal("show");
+    };
+    InventoryComponent.prototype.DeleteInventory = function (value) {
+        this.inventoriesService.deleteInventory(value).subscribe(function (data) {
+            console.log(data);
+            $('#deleteModal').modal('hide');
+            window.location.reload();
+        });
     };
     return InventoryComponent;
 }());

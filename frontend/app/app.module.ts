@@ -9,6 +9,7 @@ import { HomeComponent }  from './home/home';
 import { LoginComponent } from './login/login';
 import { headerComponent } from './header/header';
 import { HeaderLogoutComponent } from './headerLogout/headerLogout';
+import { HeaderLogout2Component } from './headerLogout2/headerLogout2';
 import { InventoryComponent } from './inventory/inventory';
 import { BannerComponent } from './banner/banner';
 import { SideNavComponent } from './sideNav/sideNav';
@@ -37,6 +38,7 @@ const appRoutes: Routes = [
   { path: 'cottonCandy', component: CottonCandyComponent },
   { path: 'tableschairs', component: TableschairsComponent },
   { path: 'inventory', component: InventoryComponent },
+  { path: 'employeeTable', component: employeeTableComponent },
   { path: 'footer', component: FooterComponent }
 ];
 
@@ -64,6 +66,7 @@ const appRoutes: Routes = [
     TableschairsComponent,
     addEmployeeModalComponent,
     HeaderLogoutComponent,
+    HeaderLogout2Component,
     addModalComponent,
     editModalComponent, 
     deleteModalComponent,

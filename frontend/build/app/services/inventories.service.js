@@ -33,6 +33,11 @@ var InventoriesService = (function () {
         var options = new http_1.RequestOptions({ headers: headers });
         return this.http.put(this.url + "/" + value.id, valueString, options).map(function (res) { return res.json(); });
     };
+    InventoriesService.prototype.deleteInventory = function (value) {
+        var header = new http_1.Headers({ 'Content-Type': 'application/json' });
+        var options = new http_1.RequestOptions({ headers: header });
+        return this.http.delete(this.url + "/" + value.id, options).map(function (res) { return res.json(); });
+    };
     return InventoriesService;
 }());
 InventoriesService = __decorate([
