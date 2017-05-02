@@ -11,6 +11,7 @@ import { UsersService } from '../services/users.service';
 export class employeeTableComponent implements OnInit { 
     //employees: any[];
     employees: any = [];
+    employee: any = ''; //used for delete modal
 
     constructor(private usersService: UsersService){}
     ngOnInit() {
@@ -19,5 +20,20 @@ export class employeeTableComponent implements OnInit {
     console.log(data);
     console.log(data.objects);
     });
+  }
+  
+  showDeleteEmployeeModal(employee: any) {
+      this.employee = employee;
+      $('#deleteEmployeeModal').modal("show");
+    }    
+
+    DeleteEmployee(value: any){
+    this.usersService.deleteEmployee(value).subscribe(data => {
+    console.log(data);
+    $('#deleteEmployeeModal').modal('hide');
+    window.location.reload();
+    });
     }
+
+
 }

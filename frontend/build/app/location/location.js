@@ -9,7 +9,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var LocationComponent = (function () {
     function LocationComponent() {
-        this.title = "Leo's part location";
+        this.title = "Leo's Party Rental location";
         this.lat = 29.448831;
         this.lng = -98.588485;
     }

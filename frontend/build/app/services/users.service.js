@@ -37,6 +37,11 @@ var UsersService = (function () {
         // this.http.post(this.url, value);
         // console.log(value);
     };
+    UsersService.prototype.deleteEmployee = function (value) {
+        var header = new http_1.Headers({ 'Content-Type': 'application/json' });
+        var options = new http_1.RequestOptions({ headers: header });
+        return this.http.delete(this.url + "/" + value.id, options).map(function (res) { return res.json(); });
+    };
     return UsersService;
 }());
 UsersService = __decorate([

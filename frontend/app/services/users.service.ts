@@ -32,5 +32,10 @@ console.log("The value has been returned.");
         // console.log(value);
     }
 
+    deleteEmployee(value: any){
+        let header = new Headers({ 'Content-Type': 'application/json' });
+        let options = new RequestOptions({ headers: header });
 
+        return this.http.delete(this.url + "/" + value.id, options).map(res => res.json());
+    }
 }

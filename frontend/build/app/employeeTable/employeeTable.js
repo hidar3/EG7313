@@ -16,6 +16,7 @@ var employeeTableComponent = (function () {
         this.usersService = usersService;
         //employees: any[];
         this.employees = [];
+        this.employee = ''; //used for delete modal
     }
     employeeTableComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -23,6 +24,17 @@ var employeeTableComponent = (function () {
             _this.employees = data.objects;
             console.log(data);
             console.log(data.objects);
+        });
+    };
+    employeeTableComponent.prototype.showDeleteEmployeeModal = function (employee) {
+        this.employee = employee;
+        $('#deleteEmployeeModal').modal("show");
+    };
+    employeeTableComponent.prototype.DeleteEmployee = function (value) {
+        this.usersService.deleteEmployee(value).subscribe(function (data) {
+            console.log(data);
+            $('#deleteEmployeeModal').modal('hide');
+            window.location.reload();
         });
     };
     return employeeTableComponent;

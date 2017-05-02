@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   templateUrl: 'location.html'
 })
 export class LocationComponent {
-  title: string = "Leo's part location";
+  title: string = "Leo's Party Rental location";
   lat: number = 29.448831;
   lng: number = -98.588485;
 }

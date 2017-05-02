@@ -45,7 +45,7 @@ export class InventoryComponent implements OnInit {
     console.log(data);
     $('#deleteModal').modal('hide');
     window.location.reload();
-  });
-}
+    });
+    }
 
 }
