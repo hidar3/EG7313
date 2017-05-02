@@ -25,6 +25,7 @@ var popcorn_1 = require("./popcorn/popcorn");
 var snowCones_1 = require("./snowCones/snowCones");
 var cottonCandy_1 = require("./cottonCandy/cottonCandy");
 var tableschairs_1 = require("./tableschairs/tableschairs");
+var location_1 = require("./location/location");
 var addModal_1 = require("./addModal/addModal");
 var editModal_1 = require("./editModal/editModal");
 var deleteModal_1 = require("./deleteModal/deleteModal");
@@ -33,6 +34,7 @@ var employeeTable_1 = require("./employeeTable/employeeTable");
 var users_service_1 = require("./services/users.service");
 var inventories_service_1 = require("./services/inventories.service");
 var footer_1 = require("./footer/footer");
+var core_2 = require("angular2-google-maps/core");
 var appRoutes = [
     { path: '', component: home_1.HomeComponent },
     { path: 'bounces', component: bounces_1.BouncesComponent },
@@ -40,6 +42,7 @@ var appRoutes = [
     { path: 'snowCones', component: snowCones_1.SnowConesComponent },
     { path: 'cottonCandy', component: cottonCandy_1.CottonCandyComponent },
     { path: 'tableschairs', component: tableschairs_1.TableschairsComponent },
+    { path: 'location', component: location_1.LocationComponent },
     { path: 'inventory', component: inventory_1.InventoryComponent },
     { path: 'employeeTable', component: employeeTable_1.employeeTableComponent },
     { path: 'footer', component: footer_1.FooterComponent }
@@ -55,10 +58,10 @@ AppModule = __decorate([
             platform_browser_1.BrowserModule,
             router_1.RouterModule.forRoot(appRoutes),
             forms_1.FormsModule,
-            http_1.HttpModule
-            // AgmCoreModule.forRoot({
-            //   apiKey: 'AIzaSyDCr2_3X_DxJADKn21Qq4VvPAN970ADHrI'
-            // })
+            http_1.HttpModule,
+            core_2.AgmCoreModule.forRoot({
+                apiKey: 'AIzaSyDCr2_3X_DxJADKn21Qq4VvPAN970ADHrI'
+            })
         ],
         declarations: [
             app_component_1.AppComponent,
@@ -72,6 +75,7 @@ AppModule = __decorate([
             snowCones_1.SnowConesComponent,
             cottonCandy_1.CottonCandyComponent,
             tableschairs_1.TableschairsComponent,
+            location_1.LocationComponent,
             addEmployeeModal_1.addEmployeeModalComponent,
             headerLogout_1.HeaderLogoutComponent,
             headerLogout2_1.HeaderLogout2Component,

@@ -28,6 +28,10 @@ var UsersService = (function () {
     UsersService.prototype.getUsers = function () {
         return this.http.get(this.url).map(function (res) { return res.json(); }); //converts observable into JSON file format
     };
+    //creating a search query in flask
+    UsersService.prototype.queryUser = function (value) {
+        return this.http.get(this.url + '?q={"filters":[{"name":"email","op":"e", "val":' + value.username + '"}]}').map(function (res) { return res.json(); });
+    };
     //login a user
     UsersService.prototype.loginUser = function (value) {
         // this.http.post(this.url, value);

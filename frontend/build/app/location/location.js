@@ -7,15 +7,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
+var LocationComponent = (function () {
+    function LocationComponent() {
+        this.title = "Leo's part location";
+        this.lat = 29.448831;
+        this.lng = -98.588485;
     }
-    return AppComponent;
+    return LocationComponent;
 }());
-AppComponent = __decorate([
+LocationComponent = __decorate([
     core_1.Component({
-        selector: 'my-app',
-        template: "<router-outlet></router-outlet>"
+        moduleId: module.id,
+        selector: 'location-cmp',
+        templateUrl: 'location.html'
     })
-], AppComponent);
-exports.AppComponent = AppComponent;
+], LocationComponent);
+exports.LocationComponent = LocationComponent;

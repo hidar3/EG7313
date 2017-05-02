@@ -18,6 +18,7 @@ import { PopcornComponent } from './popcorn/popcorn';
 import { SnowConesComponent } from './snowCones/snowCones';
 import { CottonCandyComponent } from './cottonCandy/cottonCandy';
 import { TableschairsComponent } from './tableschairs/tableschairs';
+import { LocationComponent } from './location/location';
 import { addModalComponent } from './addModal/addModal';
 import { editModalComponent } from './editModal/editModal';
 import { deleteModalComponent } from './deleteModal/deleteModal';
@@ -37,6 +38,7 @@ const appRoutes: Routes = [
   { path: 'snowCones', component: SnowConesComponent },
   { path: 'cottonCandy', component: CottonCandyComponent },
   { path: 'tableschairs', component: TableschairsComponent },
+  { path: 'location', component: LocationComponent },
   { path: 'inventory', component: InventoryComponent },
   { path: 'employeeTable', component: employeeTableComponent },
   { path: 'footer', component: FooterComponent }
@@ -47,10 +49,10 @@ const appRoutes: Routes = [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
     FormsModule,
-    HttpModule
-    // AgmCoreModule.forRoot({
-    //   apiKey: 'AIzaSyDCr2_3X_DxJADKn21Qq4VvPAN970ADHrI'
-    // })
+    HttpModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDCr2_3X_DxJADKn21Qq4VvPAN970ADHrI'
+    })
   ],
   declarations: [ 
     AppComponent,       
@@ -64,6 +66,7 @@ const appRoutes: Routes = [
     SnowConesComponent,
     CottonCandyComponent,
     TableschairsComponent,
+    LocationComponent,
     addEmployeeModalComponent,
     HeaderLogoutComponent,
     HeaderLogout2Component,

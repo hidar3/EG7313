@@ -1,0 +1,74 @@
+<header-cmp></header-cmp>
+<banner-cmp></banner-cmp>
+
+<div class="container">
+		<img src="frontend/assets/img/lrgborder.jpg" width="1500px" class="img-responsive" alt="divide bar" >
+
+		<div class="content">
+			<div class="row">
+				
+				<div class="col-md-2 ">
+					<sideNav-cmp></sideNav-cmp>
+				</div>
+				
+				<div class="col-md-10">
+					<p>Welcome to Leo's Party Rental.  We provide party rentals for San Antonio and the surrounding area.  
+					Take a look at our products and if you like what you see, please feel free to contact us anytime. 
+					Bounce and Party rentals for all your party needs. Popcorn, Cotton Candy,and Snow Cone machines. 
+					We also manufacture and sale bounces. Thank you and we hope you enjoy your visit.</p>
+					<img src="frontend/assets/img/lrgborder.jpg" width="1500px" class="img-responsive" alt="divide bar" >
+						<img src="frontend/assets/img/leospartyrental.PNG" class="img-responsive paddingImg1" alt="leospartyrental.PNG" >
+					<img src="frontend/assets/img/lrgborder.jpg" width="1500px" class="img-responsive" alt="divide bar" >
+					
+					<div class="row">
+						<div class="col-md-4 ">
+              <p class="location">Leo's Party Rental<br>
+                 4215 Culebra<br>
+                 San Antonio, TX 78228<br>
+                 tel: <a href="tel:210-431-9721">210-431-9721</a><br>
+						</div>
+
+						<div class="col-md-8 ">
+                <!-- div for footer credit card info -->
+                <!-- this creates a google map on the page with the given lat/lng from -->
+                <!-- the component as the initial center of the map: -->
+                <!-- https://angular-maps.com/docs/getting-started.html  -->
+                <sebm-google-map [zoom]=12 [latitude]="lat" [longitude]="lng">
+                  <sebm-google-map-marker [latitude]="lat" [longitude]="lng"></sebm-google-map-marker>
+                </sebm-google-map>
+					  </div>
+					
+					<img src="frontend/assets/img/lrgborder.jpg" width="1500px" class="img-responsive" alt="divide bar" >
+
+					<p>We are not very far from Ingram park mall.
+					<br>
+					<br>* Supplies are available for your rental please call for prices. 
+					</p>
+				</div>
+
+			</div> 
+		</div> <!-- close div="content" -->	
+</div>  <!--close div="container" -->
+<footer-cmp></footer-cmp>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="container">
+		<div class="row">
+      		<div class="col-md-1"></div>
+          <div class="col-md-10">
+
+
+          </div>
+          <div class="col-md-1"></div>
+
+  </div>
+

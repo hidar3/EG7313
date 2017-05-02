@@ -20,9 +20,11 @@ console.log("The value has been returned.");
 
     getUsers(){
         return this.http.get(this.url).map(res => res.json()); //converts observable into JSON file format
-
     }
-
+//creating a search query in flask
+    queryUser(value:any){
+        return this.http.get(this.url + '?q={"filters":[{"name":"email","op":"e", "val":' + value.username + '"}]}').map(res => res.json()); 
+    }
 
     //login a user
     loginUser(value: any){
