@@ -13,11 +13,26 @@
 			<form class="form-horizontal" #addForm="ngForm" (ngSubmit)="addSubmit(addForm.value)">
 			
 					<div class="form-group">
-						<label for="category" class="col-sm-2 control-label">category</label>
-						<div class="col-sm-10">
-						<input type="category" name="category" [(ngModel)]="inventory.category" class="form-control" id="category" placeholder="category">
-						</div>
+							<label for="category" class="col-sm-2 control-label">category</label>
+
+									<!--<div class="col-sm-10">
+											<input type="category" name="category" [(ngModel)]="inventory.category" class="form-control" id="category" placeholder="category">
+									</div>-->
+
+									<div class="col-sm-10">
+											<select type="category" name="category" [(ngModel)]="inventory.category" class="form-control" id="category" placeholder="category">
+												<option value="Food">Food</option>
+												<option value="Bounces">Bounces</option>
+												<option value="Decorations">Decorations</option>
+												<option value="Dunking Booth">Dunking Booth</option>
+												<option value="Tables">Tables</option>
+												<option value="Chairs">Chairs</option>
+												<option value="Balloons">Balloons</option>
+											</select>
+									</div>
 					</div>
+
+
 
 					<div class="form-group">
 						<label for="description" class="col-sm-2 control-label">description</label>

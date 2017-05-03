@@ -21,9 +21,20 @@
 						<!-- category -->
 						<div class="form-group">
 							<label for="category" class="col-sm-2 control-label">category</label>
-							<div class="col-sm-10">
+							<!--<div class="col-sm-10">
 							<input type="category" class="form-control" id="category" [(ngModel)]="inventory.category" name="category">
-							</div>
+							</div>-->
+									<div class="col-sm-10">
+											<select type="category" name="category" [(ngModel)]="inventory.category" class="form-control" id="category" placeholder="category">
+												<option value="Food">Food</option>
+												<option value="Bounces">Bounces</option>
+												<option value="Decorations">Decorations</option>
+												<option value="Dunking Booth">Dunking Booth</option>
+												<option value="Tables">Tables</option>
+												<option value="Chairs">Chairs</option>
+												<option value="Balloons">Balloons</option>
+											</select>
+									</div>
 						</div>
 						<!-- description -->
 						<div class="form-group">
