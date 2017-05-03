@@ -33,6 +33,7 @@ var addEmployeeModal_1 = require("./addEmployeeModal/addEmployeeModal");
 var employeeTable_1 = require("./employeeTable/employeeTable");
 var users_service_1 = require("./services/users.service");
 var inventories_service_1 = require("./services/inventories.service");
+var auth_service_1 = require("./services/auth.service");
 var footer_1 = require("./footer/footer");
 var core_2 = require("angular2-google-maps/core");
 var appRoutes = [
@@ -88,7 +89,8 @@ AppModule = __decorate([
         ],
         providers: [
             users_service_1.UsersService,
-            inventories_service_1.InventoriesService
+            inventories_service_1.InventoriesService,
+            auth_service_1.AuthService
         ],
         bootstrap: [app_component_1.AppComponent]
     })

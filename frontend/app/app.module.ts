@@ -26,6 +26,8 @@ import { addEmployeeModalComponent } from './addEmployeeModal/addEmployeeModal';
 import { employeeTableComponent } from './employeeTable/employeeTable'; 
 import { UsersService } from './services/users.service';
 import { InventoriesService } from './services/inventories.service';
+import { AuthService } from './services/auth.service';
+
 import { FooterComponent } from './footer/footer';
 
 import { AgmCoreModule } from 'angular2-google-maps/core';
@@ -79,7 +81,8 @@ const appRoutes: Routes = [
   ],
   providers: [
     UsersService,
-    InventoriesService
+    InventoriesService,
+    AuthService
   ],
   bootstrap: [ AppComponent ]
 })
