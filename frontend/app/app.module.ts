@@ -19,6 +19,7 @@ import { SnowConesComponent } from './snowCones/snowCones';
 import { CottonCandyComponent } from './cottonCandy/cottonCandy';
 import { TableschairsComponent } from './tableschairs/tableschairs';
 import { LocationComponent } from './location/location';
+import { contactUsComponent } from './contactUs/contactUs';
 import { addModalComponent } from './addModal/addModal';
 import { editModalComponent } from './editModal/editModal';
 import { deleteModalComponent } from './deleteModal/deleteModal';
@@ -41,6 +42,7 @@ const appRoutes: Routes = [
   { path: 'cottonCandy', component: CottonCandyComponent },
   { path: 'tableschairs', component: TableschairsComponent },
   { path: 'location', component: LocationComponent },
+  { path: 'contactUs', component: contactUsComponent },  
   { path: 'inventory', component: InventoryComponent },
   { path: 'employeeTable', component: employeeTableComponent },
   { path: 'footer', component: FooterComponent }
@@ -69,6 +71,7 @@ const appRoutes: Routes = [
     CottonCandyComponent,
     TableschairsComponent,
     LocationComponent,
+    contactUsComponent,
     addEmployeeModalComponent,
     HeaderLogoutComponent,
     HeaderLogout2Component,

@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
   selector: 'contactUs-cmp',
   templateUrl: 'contactUs.html'
 })
-export class PopcornComponent { 
+export class contactUsComponent { 
   name = 'contactUsComponent'; 
 }

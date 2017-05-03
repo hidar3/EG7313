@@ -26,6 +26,7 @@ var snowCones_1 = require("./snowCones/snowCones");
 var cottonCandy_1 = require("./cottonCandy/cottonCandy");
 var tableschairs_1 = require("./tableschairs/tableschairs");
 var location_1 = require("./location/location");
+var contactUs_1 = require("./contactUs/contactUs");
 var addModal_1 = require("./addModal/addModal");
 var editModal_1 = require("./editModal/editModal");
 var deleteModal_1 = require("./deleteModal/deleteModal");
@@ -44,6 +45,7 @@ var appRoutes = [
     { path: 'cottonCandy', component: cottonCandy_1.CottonCandyComponent },
     { path: 'tableschairs', component: tableschairs_1.TableschairsComponent },
     { path: 'location', component: location_1.LocationComponent },
+    { path: 'contactUs', component: contactUs_1.contactUsComponent },
     { path: 'inventory', component: inventory_1.InventoryComponent },
     { path: 'employeeTable', component: employeeTable_1.employeeTableComponent },
     { path: 'footer', component: footer_1.FooterComponent }
@@ -77,6 +79,7 @@ AppModule = __decorate([
             cottonCandy_1.CottonCandyComponent,
             tableschairs_1.TableschairsComponent,
             location_1.LocationComponent,
+            contactUs_1.contactUsComponent,
             addEmployeeModal_1.addEmployeeModalComponent,
             headerLogout_1.HeaderLogoutComponent,
             headerLogout2_1.HeaderLogout2Component,

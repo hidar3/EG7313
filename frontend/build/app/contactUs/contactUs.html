@@ -17,24 +17,30 @@
 					Bounce and Party rentals for all your party needs. Popcorn, Cotton Candy,and Snow Cone machines. 
 					We also manufacture and sale bounces. Thank you and we hope you enjoy your visit.</p>
 					<img src="frontend/assets/img/lrgborder.jpg" width="1500px" class="img-responsive" alt="divide bar" >
-						<h2>Contact Us</h2>
+						<h2 class="blue">Contact Us</h2>
 					<img src="frontend/assets/img/lrgborder.jpg" width="1500px" class="img-responsive" alt="divide bar" >
 					
 					<div class="row">
 
 
 
-						<div class="col-md-2 ">
-							<img src="frontend/assets/img/popcornLg.jpg"  class="img-responsive paddingImg" alt="popcornLg.jpg" >
-						</div>
+							<div class="formContainer">
+							<form action="/action_page.php">
+								<label for="yourName">Your Name</label>
+								<input type="text" id="yourName" name="yourName" placeholder="Your name..">
 
-						<div class="col-md-10 ">
-							<b>Popcorn Machine Rental</b>
-							<ul class="b">
-							<li>call for prices</li>
-							<li>supplies are available</li>
-							</ul>
-						</div>
+								<label for="email">Email address</label>
+								<input type="email" id="email" name="email" placeholder="Email address..">
+
+								<label for="Subject">Subject</label>
+								<input type="text" id="Subject" name="Subject" placeholder="Subject..">
+								
+								<label for="Message">Message</label>
+								<textarea id="Message" name="Message" placeholder="Write Message.." style="height:100px"></textarea>
+
+								<input type="submit" value="Submit">
+							</form>
+							</div>
 
 
 

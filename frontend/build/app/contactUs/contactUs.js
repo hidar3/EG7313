@@ -7,17 +7,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var PopcornComponent = (function () {
-    function PopcornComponent() {
+var contactUsComponent = (function () {
+    function contactUsComponent() {
         this.name = 'contactUsComponent';
     }
-    return PopcornComponent;
+    return contactUsComponent;
 }());
-PopcornComponent = __decorate([
+contactUsComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
         selector: 'contactUs-cmp',
         templateUrl: 'contactUs.html'
     })
-], PopcornComponent);
-exports.PopcornComponent = PopcornComponent;
+], contactUsComponent);
+exports.contactUsComponent = contactUsComponent;
