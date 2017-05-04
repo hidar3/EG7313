@@ -49,7 +49,7 @@ contactUs-cmp {
         resize: vertical;
     }
 
-    input[type=submit] {
+    .button2 {
         background-color: blue;
         color: white;
         padding: 12px 20px;
@@ -58,7 +58,7 @@ contactUs-cmp {
         cursor: pointer;
     }
 
-    input[type=submit]:hover {
+    button:hover {
         background-color: green;
     }
 

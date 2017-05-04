@@ -1,33 +1,33 @@
-
-
 banner-cmp .paddingImg{padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px}
 
-contactUs-cmp p{padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px}contactUs-cmp .paddingImg{padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;margin-left:auto;margin-right:auto;display:block}contactUs-cmp h2.blue{color:blue;font-weight:bold;text-align:center}contactUs-cmp ul.b{list-style-type:square}contactUs-cmp input[type=text],contactUs-cmp select,contactUs-cmp textarea{width:100%;padding:12px;border:1px solid #ccc;border-radius:4px;box-sizing:border-box;margin-top:6px;margin-bottom:16px;resize:vertical}contactUs-cmp input[type=email],contactUs-cmp select,contactUs-cmp textarea{width:100%;padding:12px;border:1px solid #ccc;border-radius:4px;box-sizing:border-box;margin-top:6px;margin-bottom:16px;resize:vertical}contactUs-cmp input[type=submit]{background-color:blue;color:white;padding:12px 20px;border:none;border-radius:4px;cursor:pointer}contactUs-cmp input[type=submit]:hover{background-color:green}contactUs-cmp .formContainer{border-radius:5px;background-color:#f2f2f2;padding:25px;margin:50px}
+
+
+contactUs-cmp p{padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px}contactUs-cmp .paddingImg{padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;margin-left:auto;margin-right:auto;display:block}contactUs-cmp h2.blue{color:blue;font-weight:bold;text-align:center}contactUs-cmp ul.b{list-style-type:square}contactUs-cmp input[type=text],contactUs-cmp select,contactUs-cmp textarea{width:100%;padding:12px;border:1px solid #ccc;border-radius:4px;box-sizing:border-box;margin-top:6px;margin-bottom:16px;resize:vertical}contactUs-cmp input[type=email],contactUs-cmp select,contactUs-cmp textarea{width:100%;padding:12px;border:1px solid #ccc;border-radius:4px;box-sizing:border-box;margin-top:6px;margin-bottom:16px;resize:vertical}contactUs-cmp .button2{background-color:blue;color:white;padding:12px 20px;border:none;border-radius:4px;cursor:pointer}contactUs-cmp button:hover{background-color:green}contactUs-cmp .formContainer{border-radius:5px;background-color:#f2f2f2;padding:25px;margin:50px}
 
 bounces-cmp p{padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px}bounces-cmp .paddingImg{padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;margin-left:auto;margin-right:auto;display:block}
 
 cottonCandy-cmp p{padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px}cottonCandy-cmp .paddingImg{padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;margin-left:auto;margin-right:auto;display:block}cottonCandy-cmp ul.b{list-style-type:square}
 
 
-home-cmp p{padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px}home-cmp .paddingImg{padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px}
-
-
-footer-cmp .paddingImgf{padding-top:25px;padding-right:10px;padding-bottom:35px;padding-left:10px}
 
 header-cmp .paddingImg{padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px}
 
-headerLogout-cmp .paddingImg{padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px}
+home-cmp p{padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px}home-cmp .paddingImg{padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px}
+
+footer-cmp .paddingImgf{padding-top:25px;padding-right:10px;padding-bottom:35px;padding-left:10px}
 
 headerLogout2-cmp .paddingImg{padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px}
+
+location-cmp .paddingImgf{padding-top:25px;padding-right:10px;padding-bottom:35px;padding-left:10px}location-cmp .paddingImg1{padding-top:25px;padding-right:25px;padding-bottom:25px;padding-left:25px}location-cmp p{padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px}location-cmp .location{color:blue;font-weight:bold;padding-top:110px;padding-right:25px;padding-bottom:25px;padding-left:25px}location-cmp .sebm-google-map-container{height:300px;padding-top:25px;padding-right:20px;padding-bottom:25px;padding-left:20px}
+
+headerLogout-cmp .paddingImg{padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px}
+
+inventory-cmp p{padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px}inventory-cmp .paddingImg{padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px}inventory-cmp .padding-right{padding-right:2px}
 
 home-cmp p{padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px}home-cmp .paddingImg{padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px}
 
 
-inventory-cmp p{padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px}inventory-cmp .paddingImg{padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px}inventory-cmp .padding-right{padding-right:2px}
-
 popcorn-cmp p{padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px}popcorn-cmp .paddingImg{padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;margin-left:auto;margin-right:auto;display:block}popcorn-cmp ul.b{list-style-type:square}
-
-location-cmp .paddingImgf{padding-top:25px;padding-right:10px;padding-bottom:35px;padding-left:10px}location-cmp .paddingImg1{padding-top:25px;padding-right:25px;padding-bottom:25px;padding-left:25px}location-cmp p{padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px}location-cmp .location{color:blue;font-weight:bold;padding-top:110px;padding-right:25px;padding-bottom:25px;padding-left:25px}location-cmp .sebm-google-map-container{height:300px;padding-top:25px;padding-right:20px;padding-bottom:25px;padding-left:20px}
 
 sideNav-cmp .paddingImg{padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px}
 

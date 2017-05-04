@@ -1,7 +1,7 @@
 import { NgModule }             from '@angular/core';
 import { BrowserModule }        from '@angular/platform-browser';
 import { RouterModule, Routes, Router } from '@angular/router';
-import { FormsModule }          from '@angular/forms';
+import { FormsModule, ReactiveFormsModule }          from '@angular/forms';
 import { HttpModule }           from '@angular/http'; 
 
 import { AppComponent }   from './app.component';
@@ -32,6 +32,8 @@ import { AuthService } from './services/auth.service';
 import { FooterComponent } from './footer/footer';
 
 import { AgmCoreModule } from 'angular2-google-maps/core';
+import { PostService } from './services/post.service';
+
 
 
 const appRoutes: Routes = [
@@ -54,6 +56,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     FormsModule,
     HttpModule,
+    ReactiveFormsModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyDCr2_3X_DxJADKn21Qq4VvPAN970ADHrI'
     })
@@ -85,7 +88,8 @@ const appRoutes: Routes = [
   providers: [
     UsersService,
     InventoriesService,
-    AuthService
+    AuthService,
+    PostService
   ],
   bootstrap: [ AppComponent ]
 })

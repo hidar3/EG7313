@@ -37,6 +37,7 @@ var inventories_service_1 = require("./services/inventories.service");
 var auth_service_1 = require("./services/auth.service");
 var footer_1 = require("./footer/footer");
 var core_2 = require("angular2-google-maps/core");
+var post_service_1 = require("./services/post.service");
 var appRoutes = [
     { path: '', component: home_1.HomeComponent },
     { path: 'bounces', component: bounces_1.BouncesComponent },
@@ -62,6 +63,7 @@ AppModule = __decorate([
             router_1.RouterModule.forRoot(appRoutes),
             forms_1.FormsModule,
             http_1.HttpModule,
+            forms_1.ReactiveFormsModule,
             core_2.AgmCoreModule.forRoot({
                 apiKey: 'AIzaSyDCr2_3X_DxJADKn21Qq4VvPAN970ADHrI'
             })
@@ -93,7 +95,8 @@ AppModule = __decorate([
         providers: [
             users_service_1.UsersService,
             inventories_service_1.InventoriesService,
-            auth_service_1.AuthService
+            auth_service_1.AuthService,
+            post_service_1.PostService
         ],
         bootstrap: [app_component_1.AppComponent]
     })

@@ -23,25 +23,28 @@
 					<div class="row">
 
 
-
+<!-- https://plnkr.co/edit/GCYsGwreHi13FejcWDtE?p=preview -->
 							<div class="formContainer">
-							<form action="/action_page.php">
-								<label for="yourName">Your Name</label>
-								<input type="text" id="yourName" name="yourName" placeholder="Your name..">
+								<form [formGroup]="frmContact" (ngSubmit)="onSubmit()" novalidate>
+									<label>Name:</label>
+									<input type="text" formControlName="name" placeholder="Your name..">
 
-								<label for="email">Email address</label>
-								<input type="email" id="email" name="email" placeholder="Email address..">
+									<label for="email">Email address</label>
+									<input type="email" id="email" formControlName="email" placeholder="Email address..">
 
-								<label for="Subject">Subject</label>
-								<input type="text" id="Subject" name="Subject" placeholder="Subject..">
-								
-								<label for="Message">Message</label>
-								<textarea id="Message" name="Message" placeholder="Write Message.." style="height:100px"></textarea>
-
-								<input type="submit" value="Submit">
-							</form>
+									<label for="Subject">Subject</label>
+									<input type="text" id="Subject" formControlName="Subject" placeholder="Subject..">
+									
+									<label for="Message">Message</label>
+									<textarea id="Message" formControlName="Message" placeholder="Write Message.." style="height:100px"></textarea>
+									 
+									<button class="button2" [disabled]="frmContact.invalid">Submit</button>
+								</form>
 							</div>
-
+    <div *ngIf="res">
+      Response:
+      <pre>{{ res | json }}</pre>
+    </div>
 
 
 					</div>
